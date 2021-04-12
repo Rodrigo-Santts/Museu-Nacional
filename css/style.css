@@ -43,15 +43,17 @@ ul,a{
     display: grid;
     width: 1080px;
     grid-template-columns: 360px 360px 360px;
-    grid-template-rows: 240px 350px;
+    grid-template-rows: 240px 350px 350px;
     gap: 5px;
 }
 
 .container h2{
-    color: #5d8d54;
+    color:  #0b2a3be1;
     text-transform: uppercase;
     font-size: 1.2em;
-    padding: 5px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
 }
 
             /**** Imagens da sessão ****/
@@ -67,10 +69,53 @@ ul,a{
     position: relative;
 }
 
-            /**** Video ****/
+            /**** Video  / Map ****/
 
 .video-museu{
     margin: 5px;
     grid-column: 1;
     grid-row: 2;
+}
+
+.mapa-museu{
+    margin: 5px;
+    grid-column: 2;
+    grid-row: 2;
+}
+                /**** Formatação de input ****/
+
+.visita-fotos {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+    /* border: 1px solid rgb(134, 134, 134); */
+    box-shadow: 1px 1px 1px 2px rgba(185, 170, 170, 0.322);
+}        
+
+.visita-fotos label{
+    display: block;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.visita-fotos input{
+    margin: 5px;
+    width: 180px;
+}
+
+.visita-fotos #date{
+    width: 120px;
+    height: 20px;
+}
+
+.visita-fotos #submit{
+    background-color:#0b2a3be1;
+    color: rgba(255, 255, 255, 0.89);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+.visita-fotos h2{
+    padding-top: 5px;
 }
